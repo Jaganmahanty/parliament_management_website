@@ -1,0 +1,125 @@
+﻿<%@ Master Language="VB" CodeFile="MP_Master.master.vb" Inherits="MP_Master" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style3
+        {
+            width: 1269px;
+        }
+        .style4
+        {
+            width: 1267px;
+        }
+        .style5
+        {
+            width: 296px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table class="style1">
+            <tr>
+                <td>
+                    <table class="style1">
+                       <tr>
+                            <td class="style5" rowspan="2">
+                                <asp:Image ID="Image2" runat="server" Height="200px" 
+                                    ImageUrl="~/images/newlogo.jpg" Width="200px" />
+                            </td>
+                            <td class="style4" style="color: #FF6600; font-size: 22pt">
+                                &nbsp;&nbsp;&nbsp;&nbsp; संसदीय कार्य मंत्रालय
+                                <br />
+&nbsp;&nbsp;&nbsp;&nbsp; MINISTRY OF PARLIAMENTRY AFFAIRS<br />
+                            </td>
+                            <td class="style6" rowspan="2">
+                                <asp:Image ID="Image3" runat="server" Height="150px" 
+                                    ImageUrl="~/images/new g20.jpg" Width="300px" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style4" style="color: #009933; font-size: 22pt">
+                                &nbsp;&nbsp;&nbsp;&nbsp; भारत सरकार<br />
+&nbsp;&nbsp;&nbsp;&nbsp; GOVERNMENT OF BHARAT</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="style1">
+                        <tr>
+                            <td bgcolor="#6666FF" class="style3" height="35px">
+                                            <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" ForeColor="Black">
+                                                <Items>
+                                                    <asp:MenuItem NavigateUrl="~/MP_Home.aspx" Text="Home" Value="Home">
+                                                    </asp:MenuItem>
+                                                    <asp:MenuItem NavigateUrl="~/MP_Member_List.aspx" Text="List Of MPs" 
+                                                        Value="List Of MPs">
+                                                    </asp:MenuItem>
+                                                    <asp:MenuItem NavigateUrl="~/MP_Bills.aspx" Text="Bills" Value="Bills">
+                                                    </asp:MenuItem>
+                                                    <asp:MenuItem NavigateUrl="~/MP_About_Us.aspx" Text="About Us" Value="About Us">
+                                                    </asp:MenuItem>
+                                                    <asp:MenuItem NavigateUrl="~/MP_Contact_Us.aspx" Text="Contact Us" 
+                                                        Value="Contact Us"></asp:MenuItem>
+                                                    <asp:MenuItem NavigateUrl="~/Home.aspx" Text="Logout" Value="Logout">
+                                                    </asp:MenuItem>
+                                                </Items>
+                                            </asp:Menu>
+                                        </td>
+                            <td align="right" bgcolor="#6666FF" width="300px">
+                                Welcome&nbsp;
+                                <asp:Label ID="lblfname" runat="server" Text="Name Of The MP"></asp:Label>
+                            &nbsp;&nbsp;&nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style3" height="30px">
+                                            &nbsp;</td>
+                            <td align="right" width="300px" height="30px">
+                                &nbsp;</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td height="100%">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="style1">
+                        <tr>
+                            <td align="center" bgcolor="#6666FF">
+                                 &copy; All copyrights are resevred by Ministry of Parliamentary Affairs &nbsp;</td>
+                            <td height="50px" width="50px">
+                                <asp:Image ID="Image4" runat="server" Height="50px" 
+                                    ImageUrl="~/images/logo1.png" Width="50px" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;</td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

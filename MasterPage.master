@@ -1,0 +1,165 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1 {
+            width: 100%;
+         
+        }
+        .style2
+        {
+            width: 100%;
+           
+        }
+        .style3
+        {
+            width: 200px;
+        }
+        .style4
+        {
+            width: 100%;
+        }
+        .style5
+        {
+            height: 31px;
+        }
+        .style6
+        {
+            width: 200px;
+        }
+        .style7
+        {
+            width: 100%;
+           
+        }
+        .style8
+        {
+            width: 798px;
+        }
+        .style9
+        {
+            width: 100%;
+         
+        }
+        .style10
+        {
+            width: 100%;
+           
+        }
+        .style11
+        {
+            width: 900px;
+        }
+        .style12
+        {
+            width: 201px;
+            height: 199px;
+        }
+        .style13
+        {
+            height: 199px;
+        }
+        .style14
+        {
+            width: 1463px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table class="style1" align="center">
+            <tr>
+                <td>
+                    <table class="style2">
+                        <tr>
+                            <td class="style3" rowspan="2">
+                                <asp:Image ID="Image2" runat="server" Height="200px" 
+                                    ImageUrl="~/images/newlogo.jpg" Width="200px" />
+                            </td>
+                            <td class="style4" style="color: #FF6600; font-size: 22pt">
+                                &nbsp;&nbsp;&nbsp;&nbsp; संसदीय कार्य मंत्रालय
+                                <br />
+&nbsp;&nbsp;&nbsp;&nbsp; MINISTRY OF PARLIAMENTRY AFFAIRS<br />
+                            </td>
+                            <td class="style6" rowspan="2">
+                                <asp:Image ID="Image3" runat="server" Height="150px" 
+                                    ImageUrl="~/images/new g20.jpg" Width="300px" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style4" style="color: #009933; font-size: 22pt">
+                                &nbsp;&nbsp;&nbsp;&nbsp; भारत सरकार<br />
+&nbsp;&nbsp;&nbsp;&nbsp; GOVERNMENT OF BHARAT</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="style7">
+                        <tr>
+                            <td class="style14" 
+                                style="border-style: none; border-width: medium; border-color: #808080" 
+                                bgcolor="#6666FF" height="32px" width="1200px">
+                                <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+                                </asp:SiteMapPath>
+                            </td>
+                            
+                            <td class="style8" 
+                                style="border-style: none; border-width: medium; border-color: #808080" 
+                                bgcolor="#6666FF" height="32px" align="right" width="150px">
+                                <asp:HyperLink ID="admin" runat="server" NavigateUrl="~/adminlogin.aspx" 
+                                    ForeColor="White">Login As Administrator                  </asp:HyperLink>
+                            </td>
+                            
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="style5">
+                    <table class="style9">
+                        <tr>
+                            <td align="left" class="style12" valign="top" height="800px" width="200px" 
+                                
+                                style="border-right-style: groove; border-right-width: thin; border-right-color: #808080" 
+                                bgcolor="#6666FF">
+                                <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1" 
+                                    ForeColor="Black">
+                                </asp:TreeView>
+                                <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+                            </td>
+                            <td align="left" class="style13" height="700px" valign="top"  >
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </td>
+                        </tr>
+                    </table>
+                    </td>
+            </tr>
+            <tr>
+                <td class="style5">
+                    <table class="style10">
+                        <tr>
+                            <td class="style11" align="center" bgcolor="#6666FF">
+                                &copy; All copyrights are resevred by Ministry of Parliamentary Affairs &nbsp;</td>
+                            <td height="50px" width="50px">
+                                <asp:Image ID="Image4" runat="server" Height="50px" 
+                                    ImageUrl="~/images/logo1.png" Width="50px" />
+                            </td>
+                        </tr>
+                    </table>
+                    </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

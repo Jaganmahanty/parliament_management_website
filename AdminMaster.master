@@ -1,0 +1,101 @@
+﻿<%@ Master Language="VB" CodeFile="AdminMaster.master.vb" Inherits="AdminMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style3
+        {
+            width: 19%;
+        }
+        .style4
+        {
+            height: 35px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table class="style1">
+            <tr>
+                <td>
+                    <table class="style1">
+                         <tr>
+                            <td class="style3" rowspan="2">
+                                <asp:Image ID="Image2" runat="server" Height="200px" 
+                                    ImageUrl="~/images/newlogo.jpg" Width="200px" />
+                            </td>
+                            <td class="style4" style="color: #FF6600; font-size: 22pt">
+                                &nbsp;&nbsp;&nbsp;&nbsp; संसदीय कार्य मंत्रालय
+                                <br />
+&nbsp;&nbsp;&nbsp;&nbsp; MINISTRY OF PARLIAMENTRY AFFAIRS<br />
+                            </td>
+                            <td class="style6" rowspan="2">
+                                <asp:Image ID="Image3" runat="server" Height="150px" 
+                                    ImageUrl="~/images/new g20.jpg" Width="300px" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style4" style="color: #009933; font-size: 22pt">
+                                &nbsp;&nbsp;&nbsp;&nbsp; भारत सरकार<br />
+&nbsp;&nbsp;&nbsp;&nbsp; GOVERNMENT OF BHARAT</td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#6666FF" class="style4">
+                    <asp:LinkButton ID="LinkButton1" runat="server" ForeColor="Black" 
+                        CausesValidation="False">Home</asp:LinkButton>
+&nbsp;&nbsp;
+                    <asp:LinkButton ID="LinkButton2" runat="server" ForeColor="Black" 
+                        CausesValidation="False">List Of MPs</asp:LinkButton>
+&nbsp;&nbsp;
+                    <asp:LinkButton ID="LinkButton3" runat="server" ForeColor="Black" 
+                        CausesValidation="False">Bills</asp:LinkButton>
+&nbsp;&nbsp;
+                    <asp:LinkButton ID="LinkButton4" runat="server" ForeColor="Black" 
+                        CausesValidation="False">About Us</asp:LinkButton>
+&nbsp;&nbsp;
+                    <asp:LinkButton ID="LinkButton5" runat="server" ForeColor="Black" 
+                        CausesValidation="False">Contact Us</asp:LinkButton>
+&nbsp;&nbsp;
+                    <asp:LinkButton ID="LinkButton6" runat="server" ForeColor="Black" 
+                        CausesValidation="False">Logout</asp:LinkButton>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table bgcolor="#507CD1" class="style1">
+                        <tr>
+                            <td align="center" height="50px" bgcolor="#6666FF">
+                                 &copy; All copyrights are resevred by Ministry of Parliamentary Affairs&nbsp;</td>
+                            <td height="50px" width="50px">
+                                <asp:Image ID="Image4" runat="server" Height="50px" 
+                                    ImageUrl="~/images/logo1.png" Width="50px" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
